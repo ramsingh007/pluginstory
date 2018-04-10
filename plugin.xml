@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.nestledtime.NTTabbarModule"
+    version="1.0.0">
+    
+    <name>NTTabbarModule</name>
+    <description>
+    This plugin allows to interact the native iOS story module in Nestled Time ionic app
+    </description>
+    
+    <license>MIT</license>
+    <keywords></keywords>
+    
+
+    <!-- ios -->
+    <platform name="ios">
+        
+        <js-module src="www/nttabbarmodule.js" name="nttabbarmodule">
+            <runs/>
+            <clobbers target="plugins.NTTabbarModule" />
+        </js-module>
+        
+        <config-file target="config.xml" parent="/*">
+            <feature name="NTTabbarModule">
+                <param name="ios-package" value="NTTabbarModulePlugin" onload="true" />
+            </feature>
+        </config-file>
+
+
+        <header-file src="src/ios/NTTabbarModulePlugin.h" />
+        <source-file src="src/ios/NTTabbarModulePlugin.m" />
+        
+    </platform>
+</plugin>

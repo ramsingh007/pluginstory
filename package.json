@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "name": "com.nestledtime.NTTabbarModule",
+  "cordova_name": "NTTabbarModule",
+  "description": "This plugin allows to interact the native iOS story module in Nestled Time ionic app",
+  "license": "MIT",
+
+  "issue": "",
+  "keywords": [],
+  "platforms": [
+    "ios"
+  ]
+}
